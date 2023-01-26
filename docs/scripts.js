@@ -1,15 +1,15 @@
-var 我超噢批 = document.querySelectorAll("p");
+var vecC = document.querySelectorAll("p");
 
-window.onload = 远控点地LL;
+window.onload = vecA;
 
 
 
-function 远控点地LL(){
+function vecA(){
 setInterval(yiyiyitest,500);
 }
-function 后门点塞pipi(服主, 服主2){
-    min = Math.ceil(服主);
-    max = Math.floor(服主2);
+function vecB(fuzhu, fuzhu2){
+    min = Math.ceil(fuzhu);
+    max = Math.floor(fuzhu2);
     return Math.floor(Math.random() * (max - min)) + min;
 }
 // function cqsber(){
@@ -19,10 +19,10 @@ function 后门点塞pipi(服主, 服主2){
 	// document.body.appendChild(疮穷);}
 
 function yiyiyitest(){
-    我超噢批.forEach(function (element){
-        var 从咯人 = 后门点塞pipi(0,255);
-        var 从咯人2 = 后门点塞pipi(0,255);
-        var 从咯人3 = 后门点塞pipi(0,255);
-        var rgb = "rgb(" + 从咯人 + "," + 从咯人2 + "," + 从咯人3 + ")";
+    vecC.forEach(function (element){
+        var number = vecB(0,255);
+        var number2 = vecB(0,255);
+        var number3 = vecB(0,255);
+        var rgb = "rgb(" + number + "," + number2 + "," + number3 + ")";
         element.style.color = rgb;})
 }
