@@ -8,7 +8,16 @@
 </head>
 <body>
     <!--ps: bug: querySelector检测不到新的《p》 <button onclick="cqsber()">让疮穷更啥b</button>-->
-    <p>疮穷傻逼</p>
+    <div class="cqsb"><p>疮穷傻逼</p></div>
+    <div class="asdfhuji">
+        <div> asdf净身出ふち</div>
+        <ul>
+            <li>秋秋浩 <input id="wocao3"></li>
+            <li>なまえ <input id="wocao2"></li>
+            <li>身份🆔 <input readonly="readonly" id="wocao"></li>
+        </ul>
+        <button onclick="sfgid();">一键出🆔</button>
+    </div>
 <style>
     @keyframes cqsb{
         0%{transform: rotateY(90deg);}
@@ -24,11 +33,8 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100%;
         margin:0;
         padding:0;
-        perspective: 85vh;
-        perspective-origin: 50% 50%;
     }
     p{
         font-size: 10vw;
@@ -42,10 +48,71 @@
         color: rgb(0,0,0);
         font-weight:bold;
     }
-    button{
-        position: fixed;
-        top:0;
-        right:0;
+    .asdfhuji button{
+        width: 200px;
+        height: 90px;
+        box-sizing: border-box;
+        margin: 10px;
+        padding: 0;
+    }
+    .asdfhuji{
+        background-color: rgb(233, 233, 233);
+        height: 375px;
+        width: 600px;
+        margin: 10px;
+        border:1px solid black;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    .asdfhuji div{
+        width: 100%;
+        background-color: white;
+        line-height: 155%;
+    }
+    .asdfhuji div::before{
+        content: "❤";
+        padding-left: 7px;
+        color: red;
+
+    }
+    .asdfhuji div::after{
+        content: "╳";
+        float: right;
+        color: white;
+        background-color: red;
+        width: 40px;
+        text-align: center;
+
+   }
+    .asdfhuji div:active::after{
+        color: black;
+        background-color: white;
+    }
+    .asdfhuji li{
+        list-style-type: none;
+        padding: 20px;
+        margin: 0;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    .asdfhuji ul{
+        margin: 0;
+    padding: 0;
+    width: 100%;
+    }
+    .cqsb{
+        perspective: 85vh;
+        perspective-origin: 50% 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:0;
+        padding:0;
     }
 </style></body>
 <script src="scripts.js"></script>

@@ -1,4 +1,7 @@
 var vecC = document.querySelectorAll("p");
+var WOCAO = document.getElementById("wocao");
+var WOCAO2 = document.getElementById("wocao2");
+var WOCAO3 = document.getElementById("wocao3");
 
 window.onload = vecA;
 
@@ -25,4 +28,11 @@ function yiyiyitest(){
         var number3 = vecB(0,255);
         var rgb = "rgb(" + number + "," + number2 + "," + number3 + ")";
         element.style.color = rgb;})
+}
+
+function sfgid(){
+    if(WOCAO2.value !== "" && WOCAO3.value !== ""){
+    WOCAO2.value = "ASDF";
+    WOCAO.value = vecB(100000000000000000,999999999999999999);
+}
 }
